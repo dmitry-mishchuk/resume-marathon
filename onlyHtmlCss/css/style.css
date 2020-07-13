@@ -1,6 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background: yellow;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px;
 }
 h1 {
   font-size: 45px;
@@ -8,39 +14,71 @@ h1 {
   color: #2a2a2a;
   margin-bottom: 20px;
 }
-h2, p {
-  font-size: 14px;
+p {
+  font-size: 16px;
   line-height: 1.714;
   text-align: justify;
   margin-bottom: 27px;
 }
+
 .mainContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.conteinerMenu {
-  flex: 1;
-  background: rgba(59,71,223,1);
-}
 
-.containerHead {
-  flex: 2;
+/*---------------Menu-----------------*/
+
+.conteinerMenu {
+  background: rgba(59,71,223,1);
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.containerContact {
+  /*padding-left: 40px;*/
+  /*padding-bottom: 15px;*/
+  box-sizing: border-box;
+  color: orange;
 }
 .contactLink {
-  color: rgba(210,210,25,2);
+  color: white;
   text-decoration: none;
 }
 .contactLink:hover {
   color: rgba(235,121,200,1);
 }
-.contact,.techSkills,.softSkills  {
-  padding-left: 40px;
-  padding-bottom: 15px;
-  box-sizing: border-box;
+.containerContact, .containerTechSkills, .containerSoftSkills{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
 }
-.contact, .techSkills, .softSkills {
-  color: rgba(210,210,25,2);
+.contactTitle, .techSkillsTitle, .softSkillsTitle {
+  color: yellow;
+  font-weight: 400;
 }
-.softSkills{
+.techSkillsItem, .softSkillsItem {
+  font-size: 14px;
+  margin-left: 10px;
+  color: orange;
+}
+.techSkillsText, .softSkillsText {
+  color: rgba(255,255,255,1);
+}
+
+/*--------------Main Container---------------*/
+
+.containerHead {
+  background: white;
+  padding-left: 90px;
+  padding-right: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.progectsTitile, .experienceTitle, .educationTitle, .dreamsTitle {
+  line-height: 4;
+  color: rgba(70,69,78,1);
+}
+.progressItem, .experienceItem, .dreamsItem {
+  margin-left: 14px;
 }
