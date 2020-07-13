@@ -2,6 +2,18 @@ body {
   background: yellow;
   font-family: 'Montserrat', sans-serif;
 }
+h1 {
+  font-size: 45px;
+  line-height: 2;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+h2, p {
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: justify;
+  margin-bottom: 27px;
+}
 .mainContainer {
   display: flex;
   flex-direction: row;
@@ -9,21 +21,26 @@ body {
 }
 .conteinerMenu {
   flex: 1;
+  background: rgba(59,71,223,1);
 }
 
 .containerHead {
   flex: 2;
 }
-
+.contactLink {
+  color: rgba(210,210,25,2);
+  text-decoration: none;
+}
+.contactLink:hover {
+  color: rgba(235,121,200,1);
+}
 .contact,.techSkills,.softSkills  {
-  background: rgba(75,114,251,1);
   padding-left: 40px;
   padding-bottom: 15px;
   box-sizing: border-box;
 }
-.techSkills {
-  color: rgba(213,230,29,1);
+.contact, .techSkills, .softSkills {
+  color: rgba(210,210,25,2);
 }
 .softSkills{
-  color: rgba(67,112,149,1);
 }
