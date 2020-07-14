@@ -4,15 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  background: yellow;
+  background: #f5f7fa;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px;
+  padding: 10px;
 }
 h1 {
   font-size: 45px;
   line-height: 2;
   color: #2a2a2a;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+h2{
+  font-size: 16px;
 }
 p {
   font-size: 16px;
@@ -20,17 +23,21 @@ p {
   text-align: justify;
   margin-bottom: 27px;
 }
-
+b {
+  color: rgba(19,18,19,1);
+}
 .mainContainer {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(49,47,62,1);
 }
 
 /*---------------Menu-----------------*/
 
 .conteinerMenu {
-  background: rgba(59,71,223,1);
+  background: #1e2939;
   width: 370px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -54,8 +61,9 @@ p {
   margin-top: 55px;
 }
 .contactTitle, .techSkillsTitle, .softSkillsTitle {
-  color: yellow;
-  font-weight: 400;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .techSkillsItem, .softSkillsItem {
   font-size: 14px;
@@ -64,6 +72,9 @@ p {
 }
 .techSkillsText, .softSkillsText {
   color: rgba(255,255,255,1);
+}
+.contactLink, .techSkillsText, .softSkillsText{
+  line-height: 2;
 }
 
 /*--------------Main Container---------------*/
@@ -76,9 +87,36 @@ p {
   padding-bottom: 100px;
 }
 .progectsTitile, .experienceTitle, .educationTitle, .dreamsTitle {
+  font-size: 20px;
+  font-weight: 700;
   line-height: 4;
-  color: rgba(70,69,78,1);
+  color: #1e2939;
 }
-.progressItem, .experienceItem, .dreamsItem {
+.progectsItem, .experienceItem, .dreamsItem {
   margin-left: 14px;
+  line-height: 1.714;
+}
+.progectsItem {
+  font-weight: 700;
+  margin-left: 15px;
+}
+.progectsLink, .techName, .dots {
+  color: gray;
+  font-weight: 400;
+}
+.professionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.professionCompany{
+  color: rgba(244,152,15,1);
+}
+.professionPeriod {
+  color: gray;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 15px;
 }
