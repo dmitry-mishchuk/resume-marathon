@@ -76,6 +76,20 @@ b {
 .contactLink, .techSkillsText, .softSkillsText{
   line-height: 2;
 }
+.one,.second {
+border:2px solid transparent;
+margin:0;
+padding:0;
+}
+.one {
+opacity:0px;
+display:block;
+position:absolute;
+transition-duration:2s;
+}
+.one:hover {
+opacity:0.00;
+}
 
 /*--------------Main Container---------------*/
 
@@ -103,6 +117,10 @@ b {
 .progectsLink, .techName, .dots {
   color: gray;
   font-weight: 400;
+  text-decoration: none;
+}
+.progectsLink:hover {
+  color: rgba(235,121,200,1);
 }
 .professionTitle {
   font-size: 16px;
@@ -111,7 +129,7 @@ b {
   margin-top: 8px;
   margin-bottom: 15px;
 }
-.professionCompany{
+.professionCompany, .university {
   color: rgba(244,152,15,1);
 }
 .professionPeriod {
