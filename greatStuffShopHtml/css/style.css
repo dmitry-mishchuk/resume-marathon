@@ -1,0 +1,35 @@
+.mainContainer {
+  max-width: 2000px;
+  display: flex;
+  flex-direction: row;
+}
+.menuContainer {
+  width: 540px;
+  background-color: yellow;
+}
+.bodyContainer {
+}
+.imgBackground, .imgTitle {
+  width: 1400px;
+  height: 625px;
+  position:relative;
+  border:2px solid transparent;
+  margin:0;
+  padding:0;
+}
+.imgBackground{
+  width: 1400px;
+  border: 2px solid red;
+}
+.imgTitle {
+  color: white;
+}
+.title{
+  font-size: 48px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+.imgBackground {
+  display:block;
+  position:absolute;
+}
